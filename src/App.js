@@ -1,8 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import './index.css';
-import {SideBar} from './SideBar.js';
-
+import { SideBar } from './SideBar.js';
 
 function App() {
   return (

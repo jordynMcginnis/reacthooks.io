@@ -8,7 +8,16 @@ export function SideBar () {
         <Link to="/">Home</Link>
       </li>
       <li>
-        <Link to="/">Home</Link>
+        <Link to="/useEffect">UseEffect</Link>
+      </li>
+      <li>
+        <Link to="/useReducer">UseReducer</Link>
+      </li>
+      <li>
+        <Link to="/useRef">UseRef</Link>
+      </li>
+      <li>
+        <Link to="/useState">UseState</Link>
       </li>
     </ul>
   );
