@@ -1,12 +1,16 @@
 import React from 'react';
-import {SideBar} from './SideBar.js';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import './index.css';
+import {SideBar} from './SideBar.js';
+
 
 function App() {
   return (
-    <div>
-      <SideBar/>
-    </div>
+    <Router>
+      <div>
+         <Route path="/" exact component={SideBar} />
+      </div>
+    </Router>
   );
 }
 
