@@ -1,9 +1,9 @@
 const name = 'useContextReducer';
-const implentation = null;
+const implementation = null;
 const usage = null;
 
 export default {
   name,
-  implentation,
+  implementation,
   usage
 }
