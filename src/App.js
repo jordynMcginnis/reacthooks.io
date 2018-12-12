@@ -8,12 +8,7 @@ function App() {
   return (
     <Router>
       <div>
-        {hookNames.map((hook)=>{
-          let hookPath = `/${hook}`;
-          return (
-            <Route path={hookPath} exact component={SideBar} />
-          )
-        })}
+        <Route exact path='/:id' component={Hook} />
       </div>
     </Router>
   );
