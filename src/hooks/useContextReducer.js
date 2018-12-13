@@ -1,6 +1,8 @@
 const name = 'useContextReducer';
-const implementation = 'here';
-const usage = null;
+
+const implementation = '' + function thing(){};
+
+const usage = 'usage will go here';
 
 export default {
   name,

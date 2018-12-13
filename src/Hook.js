@@ -8,10 +8,10 @@ export function Hook (props) {
   const [usage, setUsage] = useState(null);
 
   useEffect(() => {
-    let hook = getHook(id);
-    setName(hook.name);
-    setImplementation(hook.implementation);
-    setUsage(hook.setUsage);
+    let {name, implementation, usage} = getHook(id);
+    setName(name);
+    setImplementation(implementation);
+    setUsage(usage);
   },[id]);
 
   return (
