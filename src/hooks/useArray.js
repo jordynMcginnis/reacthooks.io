@@ -5,27 +5,32 @@ const implementation = `function useArray (initial) {
   return {
     value,
     setValue,
-    add: useCallback((newVal) => {
-      setValue(value.concat([newVal]));
-    }),
-    clear: useCallback(() => {
-      setValue([]);
-    }),
-    removeIndex: useCallback((index) => {
-      setValue((value) => {
+    add: useCallback(newVal => setValue(value.concat([newVal]))),
+    clear: useCallback(() => setValue([])),
+    removeIndex: useCallback(index => {
+      setValue(value => {
         value.splice(index, 1);
         return value;
       })
     }),
-    removeById: useCallback(() => {
-
-    })
+    removeById: useCallback(id => {
+      setValue(value => {
+        return value.filter(v => {
+          return v.id !== id
+        })
+      })
+    }),
   }
 }`;
 
 const usage = `function Usage () {
-  const todos = useArray(["Item 1"]);
-  return todos.value.map(todo => <div>{todo}</div>);
+  const friends = useArray(['Jordyn', 'Tyler', 'Bob']);
+  return (
+    <div>
+      {friends.value.map(friend => <div>{friend}</div>)}
+      <button onClick={() => friends.clear()}>clear</button>
+    </div>
+  )
 }`;
 
 export default {
