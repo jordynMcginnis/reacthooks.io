@@ -4,6 +4,22 @@ const implementation = `function useArray (initial) {
   const [value, setValue] = useState(initial);
   return {
     value,
+    setValue,
+    add: useCallback((newVal) => {
+      setValue(value.concat([newVal]));
+    }),
+    clear: useCallback(() => {
+      setValue([]);
+    }),
+    removeIndex: useCallback((index) => {
+      setValue((value) => {
+        value.splice(index, 1);
+        return value;
+      })
+    }),
+    removeById: useCallback(() => {
+
+    })
   }
 }`;
 
