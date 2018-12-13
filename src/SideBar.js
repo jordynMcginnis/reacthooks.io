@@ -6,10 +6,9 @@ export function SideBar () {
   return (
     <ul>
       {hookNames.map((hook)=>{
-        let path = `/${hook}`;
         return (
           <li key={hook}>
-            <Link to={path}>{hook}</Link>
+            <Link to={`/${hook}`}>{hook}</Link>
           </li>
         )
       })}
