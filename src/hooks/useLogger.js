@@ -1,4 +1,4 @@
-const name = ``;
+const name = `useLogger`;
 
 const implementation = ``;
 
