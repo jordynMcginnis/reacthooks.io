@@ -1,4 +1,4 @@
-const name = `use`;
+const name = `useDeviceOrientation`;
 
 const implementation = `function useDeviceOrientation() {
   const [deviceOrientation, setDeviceOrientation] = useState({
