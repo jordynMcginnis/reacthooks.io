@@ -24,7 +24,17 @@ const implementation = `const useHover = element => {
   return [el, state];
 };`;
 
-const usage = ``;
+const usage = `function Demo() {
+  const element = hovered => <div>Hover me! {hovered && "Thanks!"}</div>;
+  const [hoverable, hovered] = useHover(element);
+
+  return (
+    <div>
+      {hoverable}
+      <div>{hovered ? "HOVERED" : ""}</div>
+    </div>
+  );
+}`;
 
 export default {
   name,
