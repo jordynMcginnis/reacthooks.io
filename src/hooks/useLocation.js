@@ -1,4 +1,4 @@
-const name = ``;
+const name = `useLocation`;
 
 const implementation = ``;
 
