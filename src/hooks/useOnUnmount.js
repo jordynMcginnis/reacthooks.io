@@ -9,3 +9,9 @@ const usage = `function Demo() {
   useOnUnmount(() => console.log("goodbye world"));
   return <div />;
 }`;
+
+export default {
+  name,
+  implementation,
+  usage
+}

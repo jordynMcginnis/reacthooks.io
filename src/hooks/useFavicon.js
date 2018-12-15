@@ -1,0 +1,1 @@
+useFavicon.js

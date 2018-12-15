@@ -31,3 +31,9 @@ const usage = `function Demo() {
     <input type="text" value={newTodo.value} onChange={newTodo.onChange} />
   );
 }`;
+
+export default {
+  name,
+  implementation,
+  usage
+}
