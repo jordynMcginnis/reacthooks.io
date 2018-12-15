@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useLayoutEffect, useRef, useMemo } from 'react';
-import { getHook} from './hooks/index.js';
+import { getHook } from './hooks/index.js';
 
 export function Hook (props) {
   const id = props.match.params.id;
