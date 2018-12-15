@@ -9,6 +9,7 @@ const usage = `function Demo() {
   useOnMount(() => console.log("hello world"));
   return <div />;
 }`;
+
 export default {
   name,
   implementation,
