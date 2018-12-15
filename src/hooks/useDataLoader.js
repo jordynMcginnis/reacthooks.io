@@ -1,4 +1,4 @@
-const name = ``;
+const name = `useDataLoader`;
 
 const implementation = `const reducer = (state, action) => {
   switch (action.type) {
