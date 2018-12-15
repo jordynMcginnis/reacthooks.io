@@ -37,7 +37,12 @@ const implementation = `const useRaf = (ms = 1e12, delay = 0) => {
   return elapsed;
 };`;
 
-const usage = ``;
+const usage = `function Demo() {
+  const elapsed = useRaf(5000, 1000);
+
+  return <div>Elapsed: {elapsed}</div>;
+}
+`;
 
 export default {
   name,
