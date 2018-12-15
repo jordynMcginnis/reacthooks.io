@@ -1,8 +1,18 @@
-const name = `use`;
+const name = `useUnmount`;
 
-const implementation = ``;
+const implementation = `const useUnmount = unmount => {
+  useEffect(
+    () => () => {
+      if (unmount) unmount();
+    },
+    []
+  );
+};`;
 
-const usage = ``;
+const usage = `function Demo() {
+  useUnmount(() => console.log("UNMOUNTED"));
+  return null;
+}`;
 
 export default {
   name,
