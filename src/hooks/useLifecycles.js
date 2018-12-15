@@ -1,6 +1,13 @@
-const name = ``;
+const name = `useLifecycles`;
 
-const implementation = ``;
+const implementation = `const useLifecycles = (mount, unmount) => {
+  useEffect(() => {
+    if (mount) mount();
+    return () => {
+      if (unmount) unmount();
+    };
+  }, []);
+};`;
 
 const usage = ``;
 
