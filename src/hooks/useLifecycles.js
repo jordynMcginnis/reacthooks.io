@@ -9,7 +9,10 @@ const implementation = `const useLifecycles = (mount, unmount) => {
   }, []);
 };`;
 
-const usage = ``;
+const usage = `function Demo() {
+  useLifecycles(() => console.log("MOUNTED"), () => console.log("UNMOUNTED"));
+  return null;
+}`;
 
 export default {
   name,
