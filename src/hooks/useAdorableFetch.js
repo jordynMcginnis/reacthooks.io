@@ -83,3 +83,9 @@ const usage = `const ChuckNorrisJoke = () => {
 
   return <div>Joke: {joke.value.joke}</div>;
 };`;
+
+export default {
+  name,
+  implementation,
+  usage
+}
