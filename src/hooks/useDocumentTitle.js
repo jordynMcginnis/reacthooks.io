@@ -1,8 +1,18 @@
-const name = ``;
+const name = `useDocumentTitle`;
 
-const implementation = ``;
+const implementation = `function useDocumentTitle(title) {
+  useEffect(
+    () => {
+      document.title = title;
+    },
+    [title]
+  );
+}`;
 
-const usage = ``;
+const usage = `function Demo() {
+  useDocumentTitle("Page Title");
+  return <div />;
+}`;
 
 export default {
   name,
