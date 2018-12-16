@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "react": "^16.7.0-alpha.2",
+    "react-ace": "^6.2.0",
     "react-dom": "^16.7.0-alpha.2",
     "react-router-dom": "^4.3.1"
   },

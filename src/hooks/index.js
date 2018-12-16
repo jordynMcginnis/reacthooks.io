@@ -3,7 +3,6 @@ import useAbortableFetch from './useAbortableFetch.js';
 import useActive from './useActive.js';
 import useArray from './useArray.js';
 import useAsync from './useAsync.js';
-import useAudio from './useAudio.js';
 import useBattery from './useBattery.js';
 import useBoolean from './useBoolean.js';
 import useComponentSize from './useComponentSize.js';
@@ -19,7 +18,6 @@ import useDocumentVisibility from './useDocumentVisibility.js';
 import useDomLocation from './useDomLocation.js';
 import useFavicon from './useFavicon.js';
 import useGeolocation from './useGeolocation.js';
-//import useGlobalReducer from './useGlobalReducer.js';
 import useHover from './useHover.js';
 import useInput from './useInput.js';
 import useInputValue from './useInput.js';
@@ -62,7 +60,6 @@ const hooks = {
   useActive,
   useArray,
   useAsync,
-  useAudio,
   useBattery,
   useBoolean,
   useComponentSize,
@@ -78,7 +75,6 @@ const hooks = {
   useDomLocation,
   useFavicon,
   useGeolocation,
-  // useGlobalReducer  ducer.,
   useHover,
   useInput,
   useInputValue,
