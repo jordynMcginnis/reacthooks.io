@@ -36,6 +36,25 @@ import useMemento from './useMemento.js';
 import useMount from './useMount.js';
 import useNetworkStatus from './useNetworkStatus.js';
 import useNumber from './useNumber.js';
+import useOnlineStatus from './useOnlineStatus.js';
+import useOnMount from './useOnMount.js';
+import useOnUnmount from './useOnUnmount.js';
+import usePrevious from './usePrevious.js';
+import usePromiseHook from './usePromiseHook.js';
+import useRaf from './useRaf.js';
+import useSetstate from './useSetstate.js';
+import useSpeech from './useSpeech.js';
+import useTimeout from './useTimeout.js';
+import useTimer from './useTimer.js';
+import useTitle from './useTitle.js';
+import useToggle from './useToggle.js';
+import useUnmount from './useUnmount.js';
+import useUpdate from './useUpdate.js';
+import useWait from './useWait.js';
+import useWindowCommunication from './useWindowCommunication.js';
+import useWindowMousePosition from './useWindowMousePosition.js';
+import useWindowScrollPosition from './useWindowScrollPosition.js';
+import useWindowSize from './useWindowSize.js';
 
 const hooks = {
   useCreateStructuredSelector,
@@ -51,6 +70,50 @@ const hooks = {
   useCreateSelector,
   useCreateStateSelector,
   useDataLoader,
+  useDebounce,
+  useDeviceMotion,
+  useDeviceOrientation,
+  useDocumentTitle,
+  useDocumentVisibility,
+  useDomLocation,
+  useFavicon,
+  useGeolocation,
+  // useGlobalReducer  ducer.,
+  useHover,
+  useInput,
+  useInputValue,
+  useIntersectionObserver,
+  useIntersectionVisibleHook,
+  useInterval,
+  useLifecycles,
+  useLocalStorage,
+  useLocation,
+  useLogger,
+  useMap,
+  useMedia,
+  useMemento,
+  useMount,
+  useNetworkStatus,
+  useNumber,
+  useOnlineStatus,
+  useOnMount,
+  useOnUnmount,
+  usePrevious,
+  usePromiseHook,
+  useRaf,
+  useSetstate,
+  useSpeech,
+  useTimeout,
+  useTimer,
+  useTitle,
+  useToggle,
+  useUnmount,
+  useUpdate,
+  useWait,
+  useWindowCommunication,
+  useWindowMousePosition,
+  useWindowScrollPosition,
+  useWindowSize,
 }
 
 export const hookNames = Object.keys(hooks)

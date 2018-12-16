@@ -1,6 +1,6 @@
 const name = `usePromiseHook`;
 
-const implementation = `export const usePromise = (
+const implementation = `const usePromise = (
   fn,
   { resolve = false, resolveCondition = [] } = {}
 ) => {
@@ -71,7 +71,7 @@ const usage = `const Movies = () => {
 };
 
 const fetchMovies = () =>
-  fetch(``http://your-amazing-api.com/movies``).then(res => res.json());`;
+  fetch(\`http://your-amazing-api.com/movies\`).then(res => res.json());`;
 
 export default {
   name,
