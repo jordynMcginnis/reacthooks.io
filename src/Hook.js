@@ -3,11 +3,10 @@ import { getHook } from './hooks/index.js';
 import AceEditor from "react-ace";
 
 export function Hook (props) {
-  const code = `function () {}`;
   const id = props.match.params.id;
   const [name, setName] = useState(null);
-  const [implementation, setImplementation] = useState(code);
-  const [usage, setUsage] = useState(code);
+  const [implementation, setImplementation] = useState(undefined);
+  const [usage, setUsage] = useState(undefined);
 
   useEffect(() => {
     let {name, implementation, usage} = getHook(id);
