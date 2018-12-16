@@ -33,8 +33,7 @@ export function Hook (props) {
             borderRadius: "0 5px 5px 5px",
             maxWidth: "900px",
             padding: "5px",
-            backgroundColor:'grey',
-            color: 'white'
+            backgroundColor:'#e8e8e8',
           }}
         />
       </div>
@@ -54,8 +53,7 @@ export function Hook (props) {
             borderRadius: "0 5px 5px 5px",
             maxWidth: "900px",
             padding: "5px",
-            backgroundColor:'grey',
-            color: 'white'
+            backgroundColor:'#e8e8e8',
           }}
         />
        </div>
