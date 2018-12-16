@@ -11,11 +11,11 @@ const implementation = `const useLifecycles = (mount, unmount) => {
 
 const useLogger = (name, props) => {
   useLifecycles(
-    () => console.log(`${name} mounted`),
-    () => console.log(`${name} un-mounted`)
+    () => console.log(``${name} mounted``),
+    () => console.log(``${name} un-mounted``)
   );
   useEffect(() => {
-    console.log(`${name} props updated`, props);
+    console.log(``${name} props updated``, props);
   });
 };`;
 
