@@ -33,8 +33,14 @@ const usage = `function Usage () {
   )
 }`;
 
+const url = `https://github.com/kitze/react-hanger`;
+
+const description = `Methods: add, clear, removeIndex, removeById`;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }

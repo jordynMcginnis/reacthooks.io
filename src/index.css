@@ -8,23 +8,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
 .app {
   display: flex;
-
 }
 
 .sideBar {
-  width: 25%;
+  width: 28%;
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 400px;
   min-width: 300px;
+}
+
+.title {
+  width: 75%;
+}
+
+.r-title {
+  color: #fc0540;
 }
 
 ul {
@@ -47,12 +49,75 @@ li a {
   color: black;
 }
 
+li a:hover {
+  color: #fc0540;
+}
+
+.url{
+  color: #fc0540;
+}
+
 .hook {
+  padding-top: 5vh;
   width: 70%;
+  max-width: 950px;
+  height: 100%;
 }
 
 .editors {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+.implementation {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.copy {
+  width: 50px;
+  align-self: flex-end;
+  background-color: white;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+.i-title {
+  background-color: black;
+  color: white;
+  width: 250px;
+  height: 40px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  margin: 0;
+}
+
+
+.u-title {
+  background-color: black;
+  color: white;
+  width: 250px;
+  height: 40px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.usage{
+  padding-top: 20px;
 }

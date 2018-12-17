@@ -5,7 +5,7 @@ import { hookNames } from './hooks/index.js';
 export function SideBar () {
   return (
     <div className='sideBar'>
-    <h2>reactHooks.io</h2>
+    <h2 className='title'><span className='r-title'>react</span>Hooks.io</h2>
       <ul>
         {hookNames.map((hook)=>{
           return (
