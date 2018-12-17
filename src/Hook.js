@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useLayoutEffect, useRef, useMemo, useReducer, useCallback } from 'react';
 import { getHook } from './hooks/index.js';
 import AceEditor from "react-ace";
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 export function Hook (props) {
   const id = props.match.params.id;
@@ -20,6 +21,9 @@ export function Hook (props) {
       <div> Name : {name} </div>
       <div>
         <h3>Implementation:</h3>
+        <CopyToClipboard text={implementation}>
+          <button>Copy to clipboard</button>
+        </CopyToClipboard>
         <AceEditor
           mode="javascript"
           value={implementation}
@@ -36,8 +40,6 @@ export function Hook (props) {
             backgroundColor:'#e8e8e8',
           }}
         />
-      </div>
-      <div>
         <h3>Usage:</h3>
         <AceEditor
           mode="javascript"
