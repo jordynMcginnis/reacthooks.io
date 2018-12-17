@@ -17,9 +17,9 @@ export function Hook (props) {
   },[id]);
 
   return (
-    <div>
+    <div className='hook'>
       <div> Name : {name} </div>
-      <div>
+      <div className='editors'>
         <h3>Implementation:</h3>
         <CopyToClipboard text={implementation}>
           <button>Copy to clipboard</button>
@@ -31,7 +31,7 @@ export function Hook (props) {
           fontSize={15}
           showGutter={false}
           name="UNIQUE_ID_OF_DIV"
-          width="50%"
+          width="80%"
           editorProps={{ $blockScrolling: true }}
           style={{
             borderRadius: "0 5px 5px 5px",
@@ -48,7 +48,7 @@ export function Hook (props) {
           fontSize={15}
           showGutter={false}
           name="UNIQUE_ID_OF_DIV"
-          width="50%"
+          width="80%"
           height='300px'
           editorProps={{ $blockScrolling: true }}
           style={{

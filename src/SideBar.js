@@ -4,14 +4,17 @@ import { hookNames } from './hooks/index.js';
 
 export function SideBar () {
   return (
-    <ul>
-      {hookNames.map((hook)=>{
-        return (
-          <li key={hook}>
-            <Link to={`/${hook}`}>{hook}</Link>
-          </li>
-        )
-      })}
-    </ul>
+    <div className='sideBar'>
+    <h2>reactHooks.io</h2>
+      <ul>
+        {hookNames.map((hook)=>{
+          return (
+            <li key={hook}>
+              <Link to={`/${hook}`}>{hook}</Link>
+            </li>
+          )
+        })}
+      </ul>
+    </div>
   );
 }

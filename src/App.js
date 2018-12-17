@@ -7,7 +7,7 @@ import { Hook } from './Hook.js';
 function App() {
   return (
     <Router>
-      <div>
+      <div className='app'>
         <Route path='/' component={SideBar}/>
         <Route exact path='/:id' component={Hook} />
       </div>
