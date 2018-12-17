@@ -16,8 +16,14 @@ const usage = `function usage() {
   return toggle.value
 }`;
 
+const description = `Methods: Toggle, setTrue, setFalse`;
+
+const url = `https://github.com/kitze/react-hanger`;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }
