@@ -10,8 +10,11 @@ const usage = `function Demo() {
   return <div />;
 }`;
 
+const url = `https://github.com/kitze/react-hanger`;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url
 }

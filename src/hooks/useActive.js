@@ -38,8 +38,14 @@ const usage = `function Demo() {
   );
 }`;
 
+const description = `This hook lets you know when your mouse pointer is active on a particular element. It needs a ref of the element in question to work with. It can also take an onChange callback which it calls everytime the active state changes. The onChange function recieves the current active state of the element as a boolean value.`;
+
+const url = `https://github.com/kalcifer/react-powerhooks`;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }

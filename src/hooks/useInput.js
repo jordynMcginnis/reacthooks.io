@@ -32,8 +32,14 @@ const usage = `function Demo() {
   );
 }`;
 
+const url = `https://github.com/kitze/react-hanger`;
+
+const description = `Methods: clear, onChangeHandler, bindToInput, bind`;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }

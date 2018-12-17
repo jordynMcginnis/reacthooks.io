@@ -56,8 +56,16 @@ const usage = `function Demo() {
   );
 }`;
 
+const url = `https://github.com/kalcifer/react-powerhooks`;
+
+const description = `This hook starts an interval timer that can be stopped/resumed any time. It takes in startImmediate which decides whether the interval is on by default. It also takes a time which is the interval duration.
+
+It provides a start and stop method which allow us to control the state of the interval.`;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }
