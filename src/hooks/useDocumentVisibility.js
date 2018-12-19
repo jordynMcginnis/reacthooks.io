@@ -30,8 +30,14 @@ const usage = `function MyComponent() {
   // ...
 }`;
 
+const url = `https://github.com/rehooks/document-visibility`;
+
+const description = ``;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }

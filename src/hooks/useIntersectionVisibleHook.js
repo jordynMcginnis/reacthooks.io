@@ -43,8 +43,14 @@ const usage = `function App() {
   );
 }`;
 
+const url = `https://github.com/AvraamMavridis/react-intersection-visible-hook`;
+
+const description = ``;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }

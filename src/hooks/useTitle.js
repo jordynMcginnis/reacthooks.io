@@ -15,8 +15,14 @@ const usage = `function Demo() {
   return null;
 }`;
 
+const url = `https://github.com/streamich/react-use/blob/master/docs/useTitle.md`;
+
+const description = `React side-effect hook that sets title of the page.`;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }

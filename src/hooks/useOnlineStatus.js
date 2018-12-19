@@ -36,8 +36,14 @@ const usage = `function Demo() {
   );
 }`;
 
+const url = `https://github.com/rehooks/online-status`;
+
+const description = ``;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }

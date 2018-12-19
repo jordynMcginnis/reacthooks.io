@@ -22,8 +22,14 @@ const usage = `function Demo() {
   );
 }`;
 
+const url = `https://github.com/streamich/react-use/blob/master/docs/useSetState.md`;
+
+const description = `React state hook that creates setState method which works similar to how this.setState works in class components—it merges object changes into current state.`;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }

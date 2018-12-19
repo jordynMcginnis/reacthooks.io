@@ -14,8 +14,14 @@ const usage = `function Demo() {
   return null;
 }`;
 
+const url = `https://github.com/streamich/react-use/blob/master/docs/useLifecycles.md`;
+
+const description = `React lifecycle hook that call mount and unmount callbacks, when component is mounted and un-mounted, respectively.`;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }

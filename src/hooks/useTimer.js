@@ -132,8 +132,14 @@ const usage = `function App() {
   );
 }`;
 
+const url = `https://github.com/amrlabib/react-timer-hook`;
+
+const description = ``;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }

@@ -44,8 +44,14 @@ const usage = `function Demo() {
 }
 `;
 
+const url = `https://github.com/streamich/react-use/blob/master/docs/useRaf.md`;
+
+const description = `React animation hook that forces component to re-render on each reaquestAnimationFrame, returns percentage of time elapsed.`;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }

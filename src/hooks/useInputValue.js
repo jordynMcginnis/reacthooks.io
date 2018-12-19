@@ -19,8 +19,14 @@ const usage = `function Demo() {
   return <input {...name} />;
 }`;
 
+const url = `https://github.com/rehooks/input-value`;
+
+const description = ``;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }

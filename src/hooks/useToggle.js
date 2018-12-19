@@ -11,8 +11,14 @@ const usage = `function Demo() {
   return <div onClick={toggleAway}>{currentValue ? "🍎" : "🍏"}</div>;
 }`;
 
+const url = `https://github.com/kalcifer/react-powerhooks`;
+
+const description = ``;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }

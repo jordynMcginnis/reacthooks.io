@@ -82,8 +82,14 @@ function App() {
   return <Example id={3} />
 }`;
 
+const url = `https://github.com/smmoosavi/react-use-data-loader`;
+
+const description = ``;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }

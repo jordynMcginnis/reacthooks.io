@@ -34,8 +34,14 @@ const usage = `function Demo() {
 }
 `;
 
+const url = `https://github.com/rehooks/window-mouse-position`;
+
+const description = ``;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }

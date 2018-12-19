@@ -73,8 +73,14 @@ const usage = `const Movies = () => {
 const fetchMovies = () =>
   fetch(\`http://your-amazing-api.com/movies\`).then(res => res.json());`;
 
+const url = `https://github.com/aiven715/promise-hook`;
+
+const description = ``;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }

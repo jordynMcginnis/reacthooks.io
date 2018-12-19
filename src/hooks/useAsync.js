@@ -55,8 +55,14 @@ function Demo() {
   );
 }`;
 
+const url = `https://github.com/streamich/react-use/blob/master/docs/useAsync.md`;
+
+const description = `React hook that resolves an async function or a function that returns a promise;`;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }

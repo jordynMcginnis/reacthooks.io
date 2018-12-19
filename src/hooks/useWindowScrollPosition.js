@@ -38,8 +38,17 @@ const usage = `function Demo() {
   );
 }`;
 
+const url = `https://github.com/palmerhq/the-platform/`;
+
+const description = `Returns object containing:
+x: number: Horizontal scroll in pixels (window.pageXOffset).
+y: number: Vertical scroll in pixels (window.pageYOffset).
+`;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }

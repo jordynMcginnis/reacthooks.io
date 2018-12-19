@@ -32,8 +32,14 @@ const usage = `function Demo() {
   return <div>Screen is wide: {isWide ? "Yes" : "No"}</div>;
 }`;
 
+const url = `https://github.com/streamich/react-use/blob/master/docs/useMedia.md`;
+
+const description = `React sensor hook that tracks state of a CSS media query.`;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }

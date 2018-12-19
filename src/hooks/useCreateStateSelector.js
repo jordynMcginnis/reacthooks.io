@@ -41,8 +41,14 @@ function Component({ a, b }) {
   return <span>{memoizedValue}</span>
 }`;
 
+const url = `https://github.com/Andarist/react-selector-hooks`;
+
+const description = ``;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }

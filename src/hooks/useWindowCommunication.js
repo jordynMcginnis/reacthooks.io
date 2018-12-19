@@ -97,8 +97,14 @@ const usage = `function App() {
   );
 }`;
 
+const url = `https://github.com/AvraamMavridis/react-window-communication-hook`;
+
+const description = ``;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }

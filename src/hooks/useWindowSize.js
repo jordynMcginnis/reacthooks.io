@@ -31,8 +31,17 @@ const usage = `function Demo() {
   return <div>{size.innerWidth}</div>;
 }`;
 
+const url = `https://github.com/palmerhq/the-platform/`;
+
+const description = `Returns object containing:
+
+width: Width of browser viewport (window.innerWidth)
+height: Height of browser viewport (window.innerHeight)`;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }

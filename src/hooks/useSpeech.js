@@ -39,8 +39,14 @@ const usage = `function Demo() {
   return <pre>{JSON.stringify(state, null, 2)}</pre>;
 }`;
 
+const url = `https://github.com/streamich/react-use/blob/master/docs/useSpeech.md`;
+
+const description = `React UI hook that synthesizes human voice that speaks a given string.`;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }

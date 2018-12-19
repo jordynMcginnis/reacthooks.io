@@ -30,8 +30,14 @@ const usage = `function Demo() {
   );
 }`;
 
+const url = `https://github.com/rehooks/local-storage`;
+
+const description = ``;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }

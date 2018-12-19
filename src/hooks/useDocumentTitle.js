@@ -14,8 +14,14 @@ const usage = `function Demo() {
   return <div />;
 }`;
 
+const url = `https://github.com/rehooks/device-orientation`;
+
+const description = ``;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }

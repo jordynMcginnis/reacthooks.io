@@ -24,8 +24,14 @@ const usage = `function Demo(props) {
   return null;
 }`;
 
+const url = `https://github.com/streamich/react-use/blob/master/docs/useLogger.md`;
+
+const description = `React lifecycle hook that logs in console as component transitions through life-cycles.`;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }

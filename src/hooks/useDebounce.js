@@ -38,8 +38,14 @@ const usage = `function Input() {
   );
 }`;
 
+const url = `https://github.com/xnimorz/use-debounce`;
+
+const description = ``;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }

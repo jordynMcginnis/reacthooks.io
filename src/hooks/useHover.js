@@ -36,8 +36,14 @@ const usage = `function Demo() {
   );
 }`;
 
+const url = `https://github.com/streamich/react-use/blob/master/docs/useHover.md`;
+
+const description = `React UI sensor hooks that track if some element is being hovered by a mouse.`;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }

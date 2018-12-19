@@ -40,8 +40,14 @@ const usage = `function App() {
 //ReactDOM.render(<App />, window.root);
 `;
 
+const url = `https://github.com/forthealllight/dom-location`;
+
+const description = ``;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }

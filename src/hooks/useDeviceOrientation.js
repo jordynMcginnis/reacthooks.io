@@ -40,8 +40,14 @@ const usage = `function Demo() {
   );
 }`;
 
+const url = `https://github.com/palmerhq/the-platform/`;
+
+const description = `Detect and retrieve current device orientation.`;
+
 export default {
   name,
   implementation,
-  usage
+  usage,
+  url,
+  description
 }

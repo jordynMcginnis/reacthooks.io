@@ -84,6 +84,11 @@ const usage = `const ChuckNorrisJoke = () => {
   return <div>Joke: {joke.value.joke}</div>;
 };`;
 
+
+const description =``;
+
+const url = `https://github.com/mauricedb/use-abortable-fetch`;
+
 export default {
   name,
   implementation,
