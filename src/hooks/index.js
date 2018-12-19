@@ -1,4 +1,4 @@
-import useCreateStructuredSelector from './createStructuredSelector.js';
+import useCreateStructuredSelector from './useCreateStructuredSelector.js';
 import useAbortableFetch from './useAbortableFetch.js';
 import useActive from './useActive.js';
 import useArray from './useArray.js';
@@ -55,7 +55,6 @@ import useWindowScrollPosition from './useWindowScrollPosition.js';
 import useWindowSize from './useWindowSize.js';
 
 const hooks = {
-  useCreateStructuredSelector,
   useAbortableFetch,
   useActive,
   useArray,
@@ -64,6 +63,7 @@ const hooks = {
   useBoolean,
   useComponentSize,
   useContextReducer,
+  useCreateStructuredSelector,
   useCreateSelector,
   useCreateStateSelector,
   useDataLoader,
