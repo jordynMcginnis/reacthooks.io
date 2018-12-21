@@ -85,4 +85,5 @@ export default {
   implementation,
   usage,
   url,
+  description
 }

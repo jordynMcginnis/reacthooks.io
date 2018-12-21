@@ -10,6 +10,7 @@ body {
 
 .app {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .sideBar {
@@ -17,8 +18,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 400px;
-  min-width: 300px;
+  max-width: 300px;
+  min-width: 250px;
 }
 
 .title {
@@ -36,12 +37,14 @@ ul {
   border-right-width: 1px;
   border-right-style: solid;
   padding: 0;
-  width: 80%;
+  width: 95%;
+  align-self: center;
 }
 
 li {
   list-style: none;
   padding: 4px;
+  padding-left: 5%;
 }
 
 li a {
@@ -58,9 +61,11 @@ li a:hover {
 }
 
 .hook {
+  padding-left: 5px;
   padding-top: 5vh;
   width: 70%;
-  max-width: 950px;
+  min-width: 440px;
+  max-width: 850px;
   height: 100%;
 }
 

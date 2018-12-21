@@ -73,12 +73,9 @@ const usage = `function UserCreateButton() {
 
 const url = `https://github.com/f/react-wait`;
 
-const description = ``;
-
 export default {
   name,
   implementation,
   usage,
   url,
-  description
 }

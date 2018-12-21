@@ -1,6 +1,5 @@
-import React, { useState, useEffect, useLayoutEffect, useRef, useMemo, useReducer, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import { getHook } from './hooks/index.js';
-import brace from 'brace';
 import AceEditor from "react-ace";
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import 'brace/mode/javascript';
@@ -23,10 +22,17 @@ export function Hook (props) {
     setDescription(description);
   },[id]);
 
+  function longUrl () {
+    if(!!url) {
+      return url.length > 50;
+    }
+    return false
+  }
+
   return (
     <div className='hook'>
       <h2>{name}</h2>
-      <a href={url} className='url'>{url}</a>
+      <a href={url} className='url'>{longUrl() === true ? `${url.slice(0,50)}...` : url}</a>
       <h5>{description}</h5>
       <div className='editors'>
         <div className='implementation'>
@@ -43,7 +49,7 @@ export function Hook (props) {
             fontSize={15}
             showGutter={false}
             name="UNIQUE_ID_OF_DIV"
-            width="90%"
+            width="99%"
             editorProps={{ $blockScrolling: true }}
             style={{borderRadius: '3px'}}
           />
@@ -57,13 +63,13 @@ export function Hook (props) {
             fontSize={15}
             showGutter={false}
             name="UNIQUE_ID_OF_DIV"
-            width="90%"
+            width="99%"
             height='300px'
             editorProps={{ $blockScrolling: true }}
             style={{borderRadius: '3px'}}
           />
-         </div>
-       </div>
+        </div>
+      </div>
     </div>
   )
 }
