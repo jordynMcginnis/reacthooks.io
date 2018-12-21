@@ -42,12 +42,9 @@ const usage = `function App() {
 
 const url = `https://github.com/forthealllight/dom-location`;
 
-const description = ``;
-
 export default {
   name,
   implementation,
   usage,
   url,
-  description
 }
