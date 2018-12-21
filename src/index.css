@@ -92,7 +92,7 @@ li a:hover {
 }
 
 .i-title {
-  background-color: black;
+  background-color: #262821;
   color: white;
   width: 250px;
   height: 40px;
@@ -104,9 +104,8 @@ li a:hover {
   margin: 0;
 }
 
-
 .u-title {
-  background-color: black;
+  background-color: #262821;
   color: white;
   width: 250px;
   height: 40px;
