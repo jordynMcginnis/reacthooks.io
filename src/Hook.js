@@ -26,7 +26,7 @@ export function Hook (props) {
   return (
     <div className='hook'>
       <h2>{name}</h2>
-      <h6 className='url'>{url}</h6>
+      <a href={url} className='url'>{url}</a>
       <h5>{description}</h5>
       <div className='editors'>
         <div className='implementation'>
