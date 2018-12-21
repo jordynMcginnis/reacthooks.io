@@ -109,12 +109,9 @@ const usage = `function App() {
 
 const url = `https://github.com/chasestarr/react-memento`;
 
-const description = ``;
-
 export default {
   name,
   implementation,
   usage,
   url,
-  description
 }

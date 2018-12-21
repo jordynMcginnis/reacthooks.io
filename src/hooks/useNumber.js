@@ -81,12 +81,9 @@ const usage = `const App = () => {
 
 const url = `https://github.com/kitze/react-hanger`;
 
-const description = ``;
-
 export default {
   name,
   implementation,
   usage,
   url,
-  description
 }
