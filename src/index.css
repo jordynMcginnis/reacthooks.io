@@ -125,3 +125,27 @@ li a:hover {
 .usage{
   padding-top: 20px;
 }
+
+@media screen and (max-width: 400px){
+  .sideBar {
+    width: 100vw;
+    margin-left: 25%;
+  }
+  .title{
+    font-size: 10vw;
+    align-self: flex-start;
+  }
+  ul {
+    border-left-color: #e8e8e8;
+    border-left-width: 1px;
+    border-left-style: solid;
+    width: 100%;
+    border-right-width: 0px;
+  }
+  li {
+
+  }
+  .hook {
+    width: 100%;
+  }
+}

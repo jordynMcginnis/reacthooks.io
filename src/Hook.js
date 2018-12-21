@@ -24,7 +24,7 @@ export function Hook (props) {
 
   function longUrl () {
     if(!!url) {
-      return url.length > 50;
+      return url.length > 45;
     }
     return false
   }
@@ -32,7 +32,7 @@ export function Hook (props) {
   return (
     <div className='hook'>
       <h2>{name}</h2>
-      <a href={url} className='url'>{longUrl() === true ? `${url.slice(0,50)}...` : url}</a>
+      <a href={url} className='url'>{longUrl() === true ? `${url.slice(0,45)}...` : url}</a>
       <h5>{description}</h5>
       <div className='editors'>
         <div className='implementation'>
