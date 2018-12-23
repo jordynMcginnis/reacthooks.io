@@ -14,12 +14,13 @@ body {
 }
 
 .sideBar {
-  width: 28%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 300px;
   min-width: 250px;
+  padding: 20px;
 }
 
 .title {
@@ -30,7 +31,7 @@ body {
   color: #fc0540;
 }
 
-ul {
+other {
   display: flex;
   flex-direction: column;
   border-right-color: #e8e8e8;
@@ -41,18 +42,19 @@ ul {
   align-self: center;
 }
 
-li {
+lii{
   list-style: none;
-  padding: 4px;
+  padding: 5px;
   padding-left: 5%;
+  background-color: red;
 }
 
-li a {
+lii a {
   text-decoration: none;
   color: black;
 }
 
-li a:hover {
+lii a:hover {
   color: #fc0540;
 }
 
@@ -124,6 +126,79 @@ li a:hover {
 
 .usage {
   padding-top: 20px;
+}
+
+/*algolia css*/
+
+.algolia-container {
+/*  display: flex;
+  flex-direction: column;
+  border-right-color: #e8e8e8;
+  border-right-width: 1px;
+  border-right-style: solid;
+  padding: 0;
+  width: 80%;
+  align-self: center;
+  align-items: center;
+  background-color: blue;
+  /*width: 100%;
+  margin: 30px auto;
+  max-width: 300px;
+  padding-right: 20px;*/
+}
+
+.hit {
+  color: black;
+  text-decoration-line: none;
+}
+
+.ais-Hits {
+  list-style: none;
+}
+
+.ais-Hits-list {
+  margin: 0;
+}
+
+.ais-Hits-item {
+  width: 98%;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  box-shadow: none;
+  text-decoration: none;
+  border-right-color: #e8e8e8;
+  border-right-width: 1px;
+  border-right-style: solid;
+  height: 20px;
+  color: black;
+}
+
+.ais-Hits-item:nth-child(even) {
+
+}
+
+.ais-SearchBox-input {
+
+  font-size: 18px;
+  width: 90%;
+  height: 42px;
+}
+
+.ais-SearchBox-resetIcon path, .ais-SearchBox-submitIcon path {
+  fill: #c4c8d8;
+  border: 1px solid #aaa;
+  background-color: green;
+  height: 0px;
+  width: 0px;
+}
+
+.ais-SearchBox-input:focus{
+  outline: none;
+}
+
+.ais-SearchBox-input::placeholder {
+  color: #757575;
 }
 
 @media screen and (max-width: 400px){
