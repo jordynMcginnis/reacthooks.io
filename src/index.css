@@ -14,13 +14,12 @@ body {
 }
 
 .sideBar {
-  width: 30%;
+  width: 26%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 300px;
-  min-width: 250px;
   padding: 20px;
+  max-width: 850px;
 }
 
 .title {
@@ -31,15 +30,21 @@ body {
   color: #fc0540;
 }
 
-.url {
+.name a {
   color: #fc0540;
 }
 
-.ais-MenuSelect{
-      font-size: 1rem;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+.algolia-container {
+  width: 25vw;
+  max-width: 370px;
 }
+
+.ais-MenuSelect{
+  font-size: 1rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .ais-MenuSelect{
   padding: 0.3rem 2rem 0.3rem 0.3rem;
   background-color: #fff;
@@ -50,6 +55,7 @@ body {
   border: 1px solid #c4c8d8;
   border-radius: 5px;
 }
+
 .ais-MenuSelect-option{
   font-weight: normal;
   display: block;
@@ -57,12 +63,13 @@ body {
   min-height: 1.2em;
   padding: 0px 2px 1px;
 }
+
 .hook {
   padding-left: 5px;
   padding-top: 9vh;
-  width: 70%;
+  width: 66%;
   min-width: 440px;
-  max-width: 850px;
+  max-width: 950px;
   height: 100%;
 }
 
@@ -183,33 +190,57 @@ body {
 .ais-SearchBox-input::placeholder {
   color: #757575;
 }
+
 .menu-select {
   display: none;
 }
 
-@media screen and (max-width: 420px){
-  .app {
+#use {
+  font-size: 15px;
+}
+
+#implement {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 1130px){
+  body{
     width: 100vw;
-  }
-  .sideBar {
-    width: 100vw;
-    margin-left: 20%;
   }
 
-  .infinite-hits{
+  .app {
+    width: 100%;
+    min-width: 100vw;
+  }
+
+  .sideBar {
+    width: 100vw;
+    padding-bottom: 10px;
+    min-width: 440px;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .infinite-hits {
     display: none;
   }
 
   .menu-select {
     display: block;
-          font-size: 1rem;
+    font-size: 1rem;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
 
   .title{
-    font-size: 10vw;
-    align-self: flex-start;
+    /*font-size: 10vw;
+    align-self: flex-start;*/
+    margin-top: 0px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
   }
 
   ul {
@@ -234,12 +265,69 @@ body {
     height: 20px;
     color: black;
   }
+
   .hook {
-    width: 100%;
+    width: 100vw;
+    padding-top: 0px;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    margin: 0 auto;
+    box-sizing: border-box;
   }
+
+  .name {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+
+  .copy {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 38px;
+    width: 100px;
+    background-color: #fc0540;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+  }
+
+  .description {
+    margin-top: 8px;
+    margin-bottom: 13px;
+  }
+
   .ais-HitsPerPage {
     display: flex;
     width: 100%;
   }
 
+  .ace_editor.ace-monokai.ace_dark {
+    font-size: 10px;
+  }
+
+  .ace {
+    font-size: 5px;
+    background-color: red;
+  }
+
+  .algolia-container {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    max-width: 150px;
+
+  }
+
+  #implement {
+    font-size: 8px;
+  }
+
+  #use {
+    font-size: 12px;
+  }
 }
