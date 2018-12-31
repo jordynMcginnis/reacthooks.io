@@ -113,7 +113,6 @@ const hooks = {
 }
 
 export const hookNames = Object.keys(hooks)
-
 export function getHook (id) {
   return hooks[id]
 }
