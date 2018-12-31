@@ -2,7 +2,6 @@ import React from 'react';
 import Search from './Search.js';
 import { InstantSearch } from 'react-instantsearch-dom';
 
-
 export function SideBar () {
   return (
     <div className='sideBar'>
