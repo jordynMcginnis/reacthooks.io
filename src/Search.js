@@ -39,7 +39,6 @@ const MenuSelect = ({ currentRefinement, item, history, refine, items }) => {
 
 const CustomMenuSelect = connectMenu(withRouter(MenuSelect));
 
-
 function Hook({ hit }) {
   const { name } = hit;
   return (
