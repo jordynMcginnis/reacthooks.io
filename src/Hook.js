@@ -31,7 +31,7 @@ export function Hook (props) {
 
   return (
     <div className='hook'>
-      <h2>{name}</h2>
+      <h1>{name}</h1>
       <a href={url} className='url'>{longUrl() === true ? `${url.slice(0,45)}...` : url}</a>
       <h5>{description}</h5>
       <div className='editors'>
