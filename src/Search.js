@@ -13,7 +13,7 @@ class MenuSelect extends React.Component {
     value: ''
   }
   render() {
-    const { history, refine, items } = this.props
+    const { history, items } = this.props
 
     return (
       <select
