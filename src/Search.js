@@ -2,40 +2,51 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import {
   SearchBox,
-  InfiniteHits,
-  connectMenu
+  connectMenu,
+  Hits,
+  Configure
 } from 'react-instantsearch-dom';
 import { withRouter } from 'react-router-dom'
 
-const MenuSelect = ({ currentRefinement, item, history, refine, items }) => {
-  return (
-    <select
-      className='ais-MenuSelect'
-      value={currentRefinement || ''}
-      onChange={(e) => {
-        const hook = e.target.value
-        refine(hook)
-        if (hook !== null) {
-          history.push(`/${hook}`)
-        }
-      }}
-    >
-      <option value="" className='ais-MenuSelect-select'>See all options</option>
+class MenuSelect extends React.Component {
+  state = {
+    value: ''
+  }
+  render() {
+    const { history, refine, items } = this.props
 
-      {items.map(item => (
+    return (
+      <select
+        className='ais-MenuSelect'
+        value={this.state.value}
+        onChange={(e) => {
+          const hook = e.target.value
 
-        <option
-          key={item.label}
-          value={item.isRefined ? currentRefinement : item.value}
-          className='ais-MenuSelect-option'
-        >
-          {item.label}
-        </option>
-      ))}
+          if (hook !== null) {
+            history.push(`/${hook}`)
+          }
 
-    </select>
-  )
-};
+          this.setState({
+            value: hook
+          })
+        }}
+      >
+        <option value="" className='ais-MenuSelect-select'>See all options</option>
+
+        {items.map(item => (
+          <option
+            key={item.label}
+            value={item.value}
+            className='ais-MenuSelect-option'
+          >
+            {item.label}
+          </option>
+        ))}
+
+      </select>
+    )
+  }
+}
 
 const CustomMenuSelect = connectMenu(withRouter(MenuSelect));
 
@@ -48,6 +59,7 @@ function Hook({ hit }) {
   )
 }
 
+
 function Search() {
   return (
     <div className="container">
@@ -59,8 +71,11 @@ function Search() {
       </div>
       <div className='infinite-hits'>
         <SearchBox />
-        <InfiniteHits hitComponent={Hook}/>
+        <Hits hitComponent={Hook} />
       </div>
+      <Configure
+        hitsPerPage={999}
+      />
     </div>
   );
 }
