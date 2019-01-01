@@ -94,10 +94,18 @@ body {
 .copy {
   width: 50px;
   align-self: flex-end;
-  background-color: white;
+  /*background-color: white;
   box-shadow: 0px 0px 0px transparent;
   border: 0px solid transparent;
-  text-shadow: 0px 0px 0px transparent;
+  text-shadow: 0px 0px 0px transparent;*/
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 38px;
+  width: 100px;
+  background-color: #fc0540;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
 }
 
 .i-title {
