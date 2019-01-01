@@ -221,6 +221,15 @@ body {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+@media screen and (max-width: 1024px){
+ #implement {
+    font-size: 15px;
+  }
+
+  #use {
+    font-size: 15px;
+  }
+}
 
 @media screen and (max-width: 1130px){
   body{
@@ -341,30 +350,46 @@ body {
   }
 
  #implement {
-    font-size: 8px;
+    font-size: 15px;
   }
 
   #use {
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 423px) and (min-width: 400px){
  #implement {
-    font-size: 15px;
+    font-size: 13px;
+
   }
 
   #use {
-    font-size: 15px;
+    font-size: 13px;
+  }
+  .hook {
+    padding-left: 2%;
+  }
+}
+
+@media screen and (width: 411px) {
+  .hook {
+    padding-left: 10%;
+  }
+}
+
+@media screen and (width: 414px) {
+  .hook {
+    padding-left: 4%;
   }
 }
 
 @media screen and (max-width: 414px){
  #implement {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   #use {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
