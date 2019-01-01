@@ -22,18 +22,11 @@ export function Hook (props) {
     setDescription(description);
   },[id]);
 
-  function longUrl () {
-    if(!!url) {
-      return url.length > 45;
-    }
-    return false
-  }
-
   return (
     <div className='hook'>
-      <h1>{name}</h1>
-      <a href={url} className='url'>{longUrl() === true ? `${url.slice(0,45)}...` : url}</a>
-      <h5>{description}</h5>
+      <h1 className='name'><a href={url}>{name}</a></h1>
+
+      <h5 className='description'>{description}</h5>
       <div className='editors'>
         <div className='implementation'>
           <div className='options'>
@@ -45,13 +38,14 @@ export function Hook (props) {
           <AceEditor
             mode="javascript"
             theme="monokai"
+            fontSize="1.5vmin"
             value={implementation}
-            fontSize={15}
             showGutter={false}
-            name="UNIQUE_ID_OF_DIV"
+            name="implement"
             width="99%"
             editorProps={{ $blockScrolling: true }}
-            style={{borderRadius: '3px'}}
+            //style={{borderRadius: '3px'}}
+            style='ace'
           />
         </div>
         <div className='usage'>
@@ -60,9 +54,9 @@ export function Hook (props) {
             mode="javascript"
             value={usage}
             theme="monokai"
-            fontSize={15}
+            fontSize="1.5vmin"
             showGutter={false}
-            name="UNIQUE_ID_OF_DIV"
+            name="use"
             width="99%"
             height='300px'
             editorProps={{ $blockScrolling: true }}
