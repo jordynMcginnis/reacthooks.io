@@ -53,7 +53,6 @@ export function Hook (props) {
             showGutter={false}
             name="use"
             width="99%"
-            height='300px'
             editorProps={{ $blockScrolling: true }}
           />
         </div>
