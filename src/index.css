@@ -22,6 +22,10 @@ body {
   max-width: 850px;
 }
 
+.ais-SearchBox-reset {
+  left: 85%
+}
+
 .title {
   width: 75%;
 }
