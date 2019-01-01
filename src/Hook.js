@@ -25,7 +25,6 @@ export function Hook (props) {
   return (
     <div className='hook'>
       <h1 className='name'><a href={url}>{name}</a></h1>
-
       <h5 className='description'>{description}</h5>
       <div className='editors'>
         <div className='implementation'>
@@ -38,14 +37,12 @@ export function Hook (props) {
           <AceEditor
             mode="javascript"
             theme="monokai"
-            fontSize="1.5vmin"
+            fontSize="1.9vmin"
             value={implementation}
             showGutter={false}
             name="implement"
             width="99%"
             editorProps={{ $blockScrolling: true }}
-            //style={{borderRadius: '3px'}}
-            style='ace'
           />
         </div>
         <div className='usage'>
@@ -54,7 +51,7 @@ export function Hook (props) {
             mode="javascript"
             value={usage}
             theme="monokai"
-            fontSize="1.5vmin"
+            fontSize="1.9vmin"
             showGutter={false}
             name="use"
             width="99%"
