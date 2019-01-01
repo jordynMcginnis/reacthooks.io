@@ -37,7 +37,6 @@ export function Hook (props) {
           <AceEditor
             mode="javascript"
             theme="monokai"
-            fontSize="1.9vmin"
             value={implementation}
             showGutter={false}
             name="implement"
@@ -51,13 +50,11 @@ export function Hook (props) {
             mode="javascript"
             value={usage}
             theme="monokai"
-            fontSize="1.9vmin"
             showGutter={false}
             name="use"
             width="99%"
             height='300px'
             editorProps={{ $blockScrolling: true }}
-            style={{borderRadius: '3px'}}
           />
         </div>
       </div>
