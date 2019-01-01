@@ -210,10 +210,16 @@ body {
 
 #use {
   font-size: 15px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 #implement {
   font-size: 15px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 @media screen and (max-width: 1130px){
@@ -334,8 +340,28 @@ body {
     max-width: 150px;
   }
 
-  #implement {
+ #implement {
     font-size: 8px;
+  }
+
+  #use {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+ #implement {
+    font-size: 15px;
+  }
+
+  #use {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 414px){
+ #implement {
+    font-size: 12px;
   }
 
   #use {
