@@ -262,7 +262,7 @@ body {
     box-sizing: border-box;
   }
 
-  .title{
+  .title {
     /*font-size: 10vw;
     align-self: flex-start;*/
     margin-top: 0px;
@@ -361,7 +361,6 @@ body {
 @media screen and (max-width: 423px) and (min-width: 400px){
  #implement {
     font-size: 13px;
-
   }
 
   #use {
@@ -384,7 +383,7 @@ body {
   }
 }
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 444px) {
  #implement {
     font-size: 13px;
   }
