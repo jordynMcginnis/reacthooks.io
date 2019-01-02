@@ -2713,7 +2713,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@^2.2.3, classnames@^2.2.5:
+classnames@^2.2.5:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
@@ -4114,7 +4114,7 @@ expect@^23.6.0:
     jest-message-util "^23.4.0"
     jest-regex-util "^23.3.0"
 
-express@^4.16.2, express@^4.16.4:
+express@^4.16.2:
   version "4.16.4"
   resolved "https://registry.yarnpkg.com/express/-/express-4.16.4.tgz#fddef61926109e24c515ea97fd2f1bdbf62df12e"
   integrity sha512-j12Uuyb4FMrd/qQAm6uCHAkPtO8FDTRJZBDd5D2KOL2eLaz1yUNdUB/NOIyq0iU4q4cFarsUCrnFDPBcnksuOg==
@@ -8530,13 +8530,6 @@ react-dom@^16.7.0-alpha.2:
     object-assign "^4.1.1"
     prop-types "^15.6.2"
     scheduler "^0.12.0-alpha.2"
-
-react-dropdown@^1.6.3:
-  version "1.6.3"
-  resolved "https://registry.yarnpkg.com/react-dropdown/-/react-dropdown-1.6.3.tgz#1421046856520960a78993e45c332ec362c73b57"
-  integrity sha512-UAcVCsxeIkn5N7xpHr+WHDPbtUO+LsJyGiUT5PsdkVVPDJp9e42oxGICDyjcQ5rWa7DS0ctmn770JcM4gIvTiQ==
-  dependencies:
-    classnames "^2.2.3"
 
 react-error-overlay@^5.1.0:
   version "5.1.0"
