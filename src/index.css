@@ -362,12 +362,11 @@ body {
  #implement {
     font-size: 13px;
   }
-
   #use {
     font-size: 13px;
   }
   .hook {
-    padding-left: 2%;
+    padding-left: 1%;
   }
 }
 
