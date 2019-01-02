@@ -263,8 +263,6 @@ body {
   }
 
   .title {
-    /*font-size: 10vw;
-    align-self: flex-start;*/
     margin-top: 0px;
     margin-bottom: 10px;
     display: flex;
