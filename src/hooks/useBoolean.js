@@ -16,7 +16,7 @@ const usage = `function usage() {
   return toggle.value
 }`;
 
-const description = `Methods: Toggle, setTrue, setFalse`;
+const description = `This hook has methods that allow you to modify a boolean. Methods include Toggle, setTrue, and setFalse.`;
 
 const url = `https://github.com/kitze/react-hanger`;
 
