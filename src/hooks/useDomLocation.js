@@ -42,9 +42,12 @@ const usage = `function App() {
 
 const url = `https://github.com/forthealllight/dom-location`;
 
+const description = `This hook is used for subscribing to the window size.`;
+
 export default {
   name,
   implementation,
   usage,
   url,
+  description
 }
