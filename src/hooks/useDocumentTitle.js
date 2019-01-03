@@ -14,11 +14,14 @@ const usage = `function Demo() {
   return <div />;
 }`;
 
-const url = `https://github.com/rehooks/device-orientation`;
+const url = `https://github.com/streamich/react-use/blob/master/docs/useTitle.md`;
+
+const description = `This hook sets the title of a page.`;
 
 export default {
   name,
   implementation,
   usage,
   url,
+  description
 }
