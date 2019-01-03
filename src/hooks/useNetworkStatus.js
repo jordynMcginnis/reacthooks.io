@@ -38,7 +38,7 @@ const usage = `function Demo() {
 
 const url = `https://github.com/palmerhq/the-platform/`;
 
-const description = `Retrieve network status from the browser.`;
+const description = `This hook retrieves the network status from the browser.`;
 
 export default {
   name,
