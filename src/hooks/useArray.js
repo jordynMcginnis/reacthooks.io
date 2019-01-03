@@ -35,7 +35,7 @@ const usage = `function Usage () {
 
 const url = `https://github.com/kitze/react-hanger`;
 
-const description = `Methods: add, clear, removeIndex, removeById`;
+const description = `This hook has methods that allow you to modify an array. Methods include add, clear, removeIndex and RemoveByIndex.`;
 
 export default {
   name,
