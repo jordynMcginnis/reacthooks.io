@@ -23,7 +23,7 @@ const usage = `function Demo() {
 
 const url = `https://github.com/streamich/react-use/blob/master/docs/useFavicon.md`;
 
-const description = `React side-effect hook sets the favicon of the page.`;
+const description = `This hook sets the favicon of the page.`;
 
 export default {
   name,
