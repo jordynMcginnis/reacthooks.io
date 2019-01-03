@@ -16,7 +16,7 @@ const usage = `function Demo() {
 
 const url = `https://github.com/streamich/react-use/blob/master/docs/useUnmount.md`;
 
-const description = `lifecycle hook that call unmount callback, when component is un-mounted.`;
+const description = `This hook calls a unmount callback, when the component is un-mounted.`;
 
 export default {
   name,
