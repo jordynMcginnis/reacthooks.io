@@ -53,7 +53,7 @@ const usage = `function Demo() {
 
 const url = `https://github.com/streamich/react-use/blob/master/docs/useGeolocation.md`;
 
-const description = `React sensor hook that tracks user's geographic location.`;
+const description = `This hook tracks a user's geographic location.`;
 
 export default {
   name,
