@@ -74,7 +74,7 @@ body {
 .hook {
   padding-left: 8px;
   padding-top: 9vh;
-  /*width: 66%;*/
+  width: 66%;
   min-width: 440px;
   max-width: 900px;
   height: 100%;
