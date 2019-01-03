@@ -32,7 +32,7 @@ const usage = `function MyComponent() {
 
 const url = `https://github.com/rehooks/document-visibility`;
 
-const description = ``;
+const description = `This hook is used for subscribing to document visibility.`;
 
 export default {
   name,
