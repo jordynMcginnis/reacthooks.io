@@ -92,5 +92,6 @@ export default {
   name,
   implementation,
   usage,
-  url
+  url,
+  description
 }
