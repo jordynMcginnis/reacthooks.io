@@ -45,9 +45,12 @@ const usage = `function App() {
 
 const url = `https://github.com/AvraamMavridis/react-intersection-visible-hook`;
 
+const description = `This hook tracks the visibility of a functional component based on IntersectionVisible Observer.`;
+
 export default {
   name,
   implementation,
   usage,
   url,
+  description
 }
