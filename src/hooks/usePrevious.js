@@ -20,7 +20,7 @@ const usage = `const Counter = () => {
 
 const url = `https://github.com/kitze/react-hanger`;
 
-const description = ``;
+const description = `This hook is used to get the previous value of a prop or a state value.`;
 
 export default {
   name,
