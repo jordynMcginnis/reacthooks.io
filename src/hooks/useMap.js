@@ -36,7 +36,7 @@ const usage = `function Demo() {
 
 const url = `https://github.com/kalcifer/react-powerhooks`;
 
-const description = `This hook allows you to use a map object and get methods to manipulate the map. Takes an initialValue`;
+const description = `This hook allows you to use a map object and get methods to manipulate the map.`;
 
 export default {
   name,
