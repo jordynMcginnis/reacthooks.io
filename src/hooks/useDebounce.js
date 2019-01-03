@@ -40,9 +40,12 @@ const usage = `function Input() {
 
 const url = `https://github.com/xnimorz/use-debounce`;
 
+const description = `This hook is for debouncing.`;
+
 export default {
   name,
   implementation,
   usage,
   url,
+  description
 }
