@@ -6,7 +6,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 
 .app {
@@ -47,13 +46,13 @@ body {
   max-width: 370px;
 }
 
-.ais-MenuSelect{
+.ais-MenuSelect {
   font-size: 1rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.ais-MenuSelect{
+.ais-MenuSelect {
   padding: 0.3rem 2rem 0.3rem 0.3rem;
   background-color: #fff;
   background-image: url('http://www.w3.org/2000/svg%27 viewBox=%2…67-9.339 2.829 2.83-11.996 12.17z%27 fill%3D%22%233A4570%22 /%3E%3C/svg%3E');
@@ -64,7 +63,7 @@ body {
   border-radius: 5px;
 }
 
-.ais-MenuSelect-option{
+.ais-MenuSelect-option {
   font-weight: normal;
   display: block;
   white-space: pre;
@@ -112,7 +111,7 @@ body {
   font-size: 1em;
 }
 
-.copy:hover{
+.copy:hover {
   cursor: pointer;
   cursor: hand;
 }
@@ -210,7 +209,7 @@ body {
   border-bottom-right-radius: 5px;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
  #implement {
     font-size: 15px;
   }
@@ -220,8 +219,8 @@ body {
   }
 }
 
-@media screen and (max-width: 1130px){
-  body{
+@media screen and (max-width: 1130px) {
+  body {
     width: 100vw;
   }
 
@@ -348,7 +347,7 @@ body {
   }
 }
 
-@media screen and (max-width: 423px) and (min-width: 400px){
+@media screen and (max-width: 423px) and (min-width: 400px) {
  #implement {
     font-size: 13px;
   }
