@@ -36,9 +36,12 @@ const usage = `function Demo() {
 
 const url = `https://github.com/rehooks/window-mouse-position`;
 
+const description = `This hook gets the mouse position on the window.`
+
 export default {
   name,
   implementation,
   usage,
   url,
+  description
 }
