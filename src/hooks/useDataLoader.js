@@ -84,9 +84,12 @@ function App() {
 
 const url = `https://github.com/smmoosavi/react-use-data-loader`;
 
+const description = `This hook is used for data loading.`;
+
 export default {
   name,
   implementation,
   usage,
   url,
+  description
 }
