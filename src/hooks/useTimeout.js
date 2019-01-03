@@ -27,7 +27,7 @@ const usage = `function Demo() {
 
 const url = `https://github.com/streamich/react-use/blob/master/docs/useTimeout.md`;
 
-const description = `Returns true after a specified number of milliseconds.`;
+const description = `This hook returns true after a specified number of milliseconds.`;
 
 export default {
   name,
