@@ -32,7 +32,7 @@ const usage = `function Demo() {
 
 const url = `https://github.com/rehooks/local-storage`;
 
-const description = ``;
+const description = `This hook is used for local-storage`;
 
 export default {
   name,
