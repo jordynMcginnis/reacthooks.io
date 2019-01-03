@@ -81,9 +81,12 @@ const usage = `const App = () => {
 
 const url = `https://github.com/kitze/react-hanger`;
 
+const description = `This hook uses methods to increase and decrease the declared number. Methods include increase and decrease.`;
+
 export default {
   name,
   implementation,
   usage,
   url,
+  description
 }
