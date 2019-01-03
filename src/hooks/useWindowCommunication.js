@@ -99,9 +99,12 @@ const usage = `function App() {
 
 const url = `https://github.com/AvraamMavridis/react-window-communication-hook`;
 
+const description = `This hook is used for communicating among browsers contexts (windows, tabs, iframes).`;
+
 export default {
   name,
   implementation,
   usage,
   url,
+  description
 }
