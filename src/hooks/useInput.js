@@ -34,7 +34,7 @@ const usage = `function Demo() {
 
 const url = `https://github.com/kitze/react-hanger`;
 
-const description = `Methods: clear, onChangeHandler, bindToInput, bind`;
+const description = `This hook allows you to modify the value of an input. Methods include clear, onChangeHandler, bindToInput, and bind.`;
 
 export default {
   name,
