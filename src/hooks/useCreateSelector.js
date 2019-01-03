@@ -43,9 +43,12 @@ function Component({ a, b }) {
 
 const url = `https://github.com/Andarist/react-selector-hooks`;
 
+const description = `This hook allows you to reuse existing functions`;
+
 export default {
   name,
   implementation,
   usage,
   url,
+  description
 }
