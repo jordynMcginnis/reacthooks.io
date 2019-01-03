@@ -97,7 +97,7 @@ const usage = `function Demo() {
 
 const url = `https://github.com/streamich/react-use/blob/master/docs/useLocation.md`;
 
-const description = `React sensor hook that tracks brower's location.`;
+const description = `This hook tracks the browser's location.`;
 
 export default {
   name,
