@@ -21,9 +21,12 @@ const usage = `function Demo() {
 
 const url = `https://github.com/rehooks/input-value`;
 
+const description = `This hook is used for creating input values.`;
+
 export default {
   name,
   implementation,
   usage,
   url,
+  description
 }
