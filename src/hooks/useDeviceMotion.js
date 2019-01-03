@@ -45,7 +45,7 @@ const usage = `function Demo() {
 
 const url = `https://github.com/palmerhq/the-platform/`;
 
-const description = `Detect and retrieve current device Motion.`;
+const description = `This hook detects and retrieves current device Motion.`;
 
 export default {
   name,
