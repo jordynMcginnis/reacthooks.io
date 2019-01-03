@@ -75,9 +75,12 @@ const fetchMovies = () =>
 
 const url = `https://github.com/aiven715/promise-hook`;
 
+const description = `This hook is used for handling promises.`;
+
 export default {
   name,
   implementation,
   usage,
   url,
+  description
 }
