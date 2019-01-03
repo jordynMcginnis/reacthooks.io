@@ -57,7 +57,7 @@ function Demo() {
 
 const url = `https://github.com/streamich/react-use/blob/master/docs/useAsync.md`;
 
-const description = `This hook resolves an async function or a function that returns a promise;`;
+const description = `This hook resolves an async function or a function that returns a promise.`;
 
 export default {
   name,
