@@ -20,9 +20,12 @@ const usage = `const Counter = () => {
 
 const url = `https://github.com/kitze/react-hanger`;
 
+const description = ``;
+
 export default {
   name,
   implementation,
   usage,
   url,
+  description
 }
