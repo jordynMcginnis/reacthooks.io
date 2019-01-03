@@ -13,9 +13,12 @@ const usage = `function Demo() {
 
 const url = `https://github.com/kalcifer/react-powerhooks`;
 
+const description = ``;
+
 export default {
   name,
   implementation,
   usage,
   url,
+  description
 }
