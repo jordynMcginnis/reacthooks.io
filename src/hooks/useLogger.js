@@ -26,7 +26,7 @@ const usage = `function Demo(props) {
 
 const url = `https://github.com/streamich/react-use/blob/master/docs/useLogger.md`;
 
-const description = `React lifecycle hook that logs in console as component transitions through life-cycles.`;
+const description = `This hook logs in the console as component transitions through life-cycles.`;
 
 export default {
   name,
