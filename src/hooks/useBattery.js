@@ -59,7 +59,7 @@ const usage = `function Demo() {
 
 const url = `https://github.com/streamich/react-use/blob/master/docs/useBattery.md`;
 
-const description = `React sensor hook that tracks battery status.`;
+const description = `This is a React sensor hook that tracks battery status.`;
 
 export default {
   name,
