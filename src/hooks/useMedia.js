@@ -34,7 +34,7 @@ const usage = `function Demo() {
 
 const url = `https://github.com/streamich/react-use/blob/master/docs/useMedia.md`;
 
-const description = `React sensor hook that tracks state of a CSS media query.`;
+const description = `This hook tracks the state of a CSS media query.`;
 
 export default {
   name,
