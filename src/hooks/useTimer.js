@@ -134,9 +134,12 @@ const usage = `function App() {
 
 const url = `https://github.com/amrlabib/react-timer-hook`;
 
+const description = `This hook handles timers and countdown logic in your component.`;
+
 export default {
   name,
   implementation,
   usage,
   url,
+  description
 }
