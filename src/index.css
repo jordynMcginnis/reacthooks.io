@@ -6,11 +6,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 .app {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1348px;
+  margin: 0 auto;
+  background-color: white;
 }
 
 .sideBar {
@@ -19,7 +23,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  max-width: 850px;
+  max-width: 476px;
 }
 
 .ais-SearchBox-reset {
@@ -69,11 +73,11 @@ body {
 }
 
 .hook {
-  padding-left: 5px;
+  padding-left: 8px;
   padding-top: 9vh;
-  width: 66%;
+  /*width: 66%;*/
   min-width: 440px;
-  max-width: 950px;
+  max-width: 900px;
   height: 100%;
 }
 
@@ -230,10 +234,12 @@ body {
     width: 100vw;
     padding-bottom: 10px;
     min-width: 440px;
+
     padding-left: 10%;
     padding-right: 10%;
     box-sizing: border-box;
     margin: 0 auto;
+
   }
 
   .infinite-hits {
@@ -284,6 +290,7 @@ body {
     padding-right: 10%;
     margin: 0 auto;
     box-sizing: border-box;
+    align-self: center;
   }
 
   .name {
