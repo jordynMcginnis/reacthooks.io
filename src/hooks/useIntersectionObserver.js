@@ -41,9 +41,12 @@ const usage = `function Demo() {
 
 const url = `https://github.com/palmerhq/the-platform/`;
 
+const description = `This hook is used for triggering transitions`;
+
 export default {
   name,
   implementation,
   usage,
   url,
+  description
 }
