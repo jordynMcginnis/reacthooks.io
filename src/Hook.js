@@ -14,7 +14,7 @@ export function Hook (props) {
   const [description, setDescription] = useState(undefined);
 
   useEffect(() => {
-    let {name, implementation, usage, url, description} = getHook(id);
+    const {name, implementation, usage, url, description} = getHook(id);
     setName(name);
     setImplementation(implementation);
     setUsage(usage);
