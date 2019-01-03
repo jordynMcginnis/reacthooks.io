@@ -109,7 +109,7 @@ const usage = `function App() {
 
 const url = `https://github.com/chasestarr/react-memento`;
 
-const description = ``;
+const description = `This hook maintains a similar api to react's state hook. In addition to the current value, and a setter, it provides a memento component to display the debugger UI. The function also accepts an optional label to identify multiple mementos rendered to the page.`;
 
 export default {
   name,
