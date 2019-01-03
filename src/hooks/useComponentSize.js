@@ -47,7 +47,7 @@ const usage = `function Demo() {
 
 const url = `https://github.com/rehooks/component-size`;
 
-const description = `This hook determines the size of a component`;
+const description = `This hook determines the size of a component.`;
 
 export default {
   name,
