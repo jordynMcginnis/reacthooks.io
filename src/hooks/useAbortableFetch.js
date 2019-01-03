@@ -86,6 +86,8 @@ const usage = `const ChuckNorrisJoke = () => {
 
 const url = `https://github.com/mauricedb/use-abortable-fetch`;
 
+const description = `This hook does a fetch and aborts when the component is unloaded or a new fetch is started.`;
+
 export default {
   name,
   implementation,
