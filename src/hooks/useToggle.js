@@ -13,7 +13,7 @@ const usage = `function Demo() {
 
 const url = `https://github.com/kalcifer/react-powerhooks`;
 
-const description = ``;
+const description = `This hook allows you to toggle between values.`;
 
 export default {
   name,
