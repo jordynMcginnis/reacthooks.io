@@ -10,7 +10,7 @@ const usage = `function Demo() {
 
 const url = `https://github.com/streamich/react-use/blob/master/docs/useMount.md`;
 
-const description = `React lifecycle hook that call mount callback, when component is mounted.`;
+const description = `This hook calls a mount callback, when the component is mounted.`;
 
 export default {
   name,
