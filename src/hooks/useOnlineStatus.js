@@ -38,9 +38,12 @@ const usage = `function Demo() {
 
 const url = `https://github.com/rehooks/online-status`;
 
+const description = `This hook is used for subscribing to online/offline events.`;
+
 export default {
   name,
   implementation,
   usage,
   url,
+  description
 }
