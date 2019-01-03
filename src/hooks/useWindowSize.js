@@ -33,10 +33,7 @@ const usage = `function Demo() {
 
 const url = `https://github.com/palmerhq/the-platform/`;
 
-const description = `Returns object containing:
-
-width: Width of browser viewport (window.innerWidth)
-height: Height of browser viewport (window.innerHeight)`;
+const description = `This hook gets the width and height of the browser viewport`;
 
 export default {
   name,
