@@ -12,7 +12,7 @@ const usage = `function Demo() {
 
 const url = `https://github.com/kitze/react-hanger`;
 
-const description = `This hook is used on mounting.`;
+const description = `This hook is used for the onMount lifecycle.`;
 
 export default {
   name,
