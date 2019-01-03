@@ -73,9 +73,12 @@ const usage = `function UserCreateButton() {
 
 const url = `https://github.com/f/react-wait`;
 
+const description = `This hook helps to manage multiple loading states on the page without any conflict.`;
+
 export default {
   name,
   implementation,
   usage,
   url,
+  description
 }
