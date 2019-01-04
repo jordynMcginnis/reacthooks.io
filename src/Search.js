@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
   SearchBox,
@@ -8,32 +8,26 @@ import {
 } from 'react-instantsearch-dom';
 import { withRouter } from 'react-router-dom'
 
-class MenuSelect extends React.Component {
-  state = {
-    value: ''
-  }
-  render() {
-    const { history, items } = this.props
+function MenuSelect (props) {
+  const { history, items } = props;
+  const [value, setValue] = useState('');
+  return (
+    <select
+      className='ais-MenuSelect'
+      value={value}
+      onChange={(e) => {
+        const hook = e.target.value
 
-    return (
-      <select
-        className='ais-MenuSelect'
-        value={this.state.value}
-        onChange={(e) => {
-          const hook = e.target.value
+        if (hook !== null) {
+          history.push(`/${hook}`)
+        }
 
-          if (hook !== null) {
-            history.push(`/${hook}`)
-          }
+        setValue(hook);
+      }}
+    >
+      <option value="" className='ais-MenuSelect-select'>See all options</option>
 
-          this.setState({
-            value: hook
-          })
-        }}
-      >
-        <option value="" className='ais-MenuSelect-select'>See all options</option>
-
-        {items.map(item => (
+      {items.map(item => (
           <option
             key={item.label}
             value={item.value}
@@ -41,11 +35,10 @@ class MenuSelect extends React.Component {
           >
             {item.label}
           </option>
-        ))}
+      ))}
 
       </select>
-    )
-  }
+  )
 }
 
 const CustomMenuSelect = connectMenu(withRouter(MenuSelect));
@@ -58,7 +51,6 @@ function Hook({ hit }) {
     </div>
   )
 }
-
 
 function Search() {
   return (
@@ -79,6 +71,5 @@ function Search() {
     </div>
   );
 }
-
 
 export default Search;
