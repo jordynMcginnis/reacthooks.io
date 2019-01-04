@@ -37,7 +37,7 @@ function MenuSelect (props) {
           </option>
       ))}
 
-      </select>
+    </select>
   )
 }
 
