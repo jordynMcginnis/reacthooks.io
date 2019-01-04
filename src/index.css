@@ -233,7 +233,6 @@ body {
     width: 100vw;
     padding-bottom: 10px;
     min-width: 440px;
-
     padding-left: 10%;
     padding-right: 10%;
     box-sizing: border-box;
@@ -374,7 +373,7 @@ body {
 }
 
 @media screen and (max-width: 444px) {
- #implement {
+  #implement {
     font-size: 13px;
   }
 
