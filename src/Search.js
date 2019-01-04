@@ -6,7 +6,7 @@ import {
   Hits,
   Configure
 } from 'react-instantsearch-dom';
-import { withRouter } from 'react-router-dom'
+import { withRouter } from 'react-router-dom';
 
 function MenuSelect (props) {
   const { history, items } = props;
