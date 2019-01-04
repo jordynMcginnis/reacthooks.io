@@ -21,7 +21,7 @@ function Component({ a, b }) {
 
 const url = `https://github.com/Andarist/react-selector-hooks`;
 
-const description = `This hook determines if the value returned by an input-selector has changed between calls using reference equality (===).`;
+const description = `This hook creates a selector for your component`;
 
 export default {
   name,
