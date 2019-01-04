@@ -31,7 +31,7 @@ export function Hook (props) {
           <div className='options'>
             <h3 className='i-title'>IMPLEMENTATION:</h3>
             <CopyToClipboard text={implementation}>
-              <button className='copy'>Copy</button>
+              <button className='copy' onClick={() => {alert('copied to clip board')}}>Copy</button>
             </CopyToClipboard>
           </div>
           <AceEditor
@@ -41,7 +41,9 @@ export function Hook (props) {
             showGutter={false}
             name="implement"
             width="99%"
-            editorProps={{ $blockScrolling: true }}
+            wrapEnabled={true}
+            maxLines={Infinity}
+            editorProps={{ $blockScrolling: Infinity }}
           />
         </div>
         <div className='usage'>
@@ -53,7 +55,9 @@ export function Hook (props) {
             showGutter={false}
             name="use"
             width="99%"
-            editorProps={{ $blockScrolling: true }}
+            wrapEnabled={true}
+            maxLines={Infinity}
+            editorProps={{ $blockScrolling: Infinity }}
           />
         </div>
       </div>
