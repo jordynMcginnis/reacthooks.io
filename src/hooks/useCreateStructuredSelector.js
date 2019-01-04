@@ -6,16 +6,6 @@ const implementation = `const createMemoSelector = resolver => dependencies =>
 const resolveResolvers = (resolvers, args) =>
   resolvers.map(resolver => resolver(...args))
 
-export const createSelector = resolver => {
-  const selector = createMemoSelector(resolver)
-  return (...dependencies) => selector(dependencies)
-}
-
-export const createStateSelector = (dependencyResolvers, resolver) => {
-  const selector = createMemoSelector(resolver)
-  return (...args) => selector(resolveResolvers(dependencyResolvers, args))
-}
-
 export const createStructuredSelector = (dependencyResolversMap, resolver) => {
   const keys = Object.keys(dependencyResolversMap)
   const dependencyResolvers = keys.map(key => dependencyResolversMap[key])
@@ -43,9 +33,12 @@ function Component({ a, b }) {
 
 const url = `https://github.com/Andarist/react-selector-hooks`;
 
+const description = `This hook returns an object with the same keys as the inputSelectors argument, but with the selectors replaced with their values.`;
+
 export default {
   name,
   implementation,
   usage,
-  url
+  url,
+  description
 }
