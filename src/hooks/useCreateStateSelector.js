@@ -21,7 +21,7 @@ function Component({ a, b }) {
 
 const url = `https://github.com/Andarist/react-selector-hooks`;
 
-const description = `This hook `;
+const description = `This hook creates a state selector for your component`;
 
 export default {
   name,
