@@ -152,7 +152,9 @@ body {
   color: black;
   text-decoration-line: none;
 }
-
+.ais-Hits{
+  margin-top: 15px;
+}
 .ais-Hits, .ais-InfiniteHits {
   list-style: none;
 }
@@ -210,6 +212,7 @@ body {
 
 .nav a {
   text-decoration: none;
+  color: black;
 }
 
 .nav ul li {
@@ -226,6 +229,9 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.libraries h1 {
+  font-size: 4em;
+}
 
 .libraries ul {
   padding: 0px;
@@ -235,10 +241,10 @@ body {
   flex-wrap: wrap;
 }
 
-.libraries ul li {
+.libraries ul a {
   margin: 1%;
-  width: 40%;
-  height: 50%;
+  width: 30%;
+  height: 29vh;
   list-style: none;
   border-width: 1px;
   border-style: solid;
@@ -248,17 +254,34 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   box-sizing: border-box;
+  max-height: 189px;
+  max-width: 292px;
+  padding: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.libraries ul a:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .libraries ul li span{
   padding-top: 5%;
   text-align: center;
+  color:#7f7f7f;
 }
 
-.libraries ul a {
+.libraries ul li {
   text-decoration: none;
   color: black;
+  list-style: none;
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #use {
@@ -281,6 +304,7 @@ body {
     padding-right: 0px;
     justify-content: space-between;
   }
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -436,6 +460,13 @@ body {
 
   .hook {
     padding-left: 1%;
+  }
+  .libraries ul {
+    border-width: 0px;
+  }
+  .libraries ul li {
+
+    height: 150px;
   }
 }
 
