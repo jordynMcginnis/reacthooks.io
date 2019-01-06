@@ -176,7 +176,6 @@ body {
 }
 
 .ais-SearchBox-input {
-
   font-size: 18px;
   width: 95%;
   height: 42px;
@@ -200,7 +199,6 @@ body {
   height: 0px;
   width: 100%;
   background-color: red;
-
 }
 
 .nav ul {
@@ -209,6 +207,7 @@ body {
   box-sizing: border-box;
   padding-right: 40px;
 }
+
 .nav a {
   text-decoration: none;
 }
@@ -218,6 +217,48 @@ body {
   padding: 10px;
   list-style: none;
   margin: 0px;
+}
+
+.libraries {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.libraries ul {
+  padding: 0px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.libraries ul li {
+  margin: 1%;
+  width: 40%;
+  height: 50%;
+  list-style: none;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #7f7f7f;
+  color: #7f7f7f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.libraries ul li span{
+  padding-top: 5%;
+  text-align: center;
+}
+
+.libraries ul a {
+  text-decoration: none;
+  color: black;
 }
 
 #use {
@@ -235,7 +276,7 @@ body {
 }
 
 @media screen and (max-width: 1130px) {
-    .nav {
+  .nav {
     height: 50px;
     padding-right: 0px;
     justify-content: space-between;
