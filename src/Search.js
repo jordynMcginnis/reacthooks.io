@@ -44,6 +44,7 @@ function MenuSelect (props) {
 const CustomMenuSelect = connectMenu(withRouter(MenuSelect));
 
 function Hook({ hit }) {
+  //console.log({hit})
   const { name } = hit;
   return (
     <div>
