@@ -11,9 +11,10 @@ function App() {
     <Router>
       <div className='app'>
         <Route path='/' component={Nav}/>
-        <Route exact path='/home' component={SideBar}/>
-        <Route exact path='/libraries' component={Libraries}/>
+        <Route path='/hooks' component={SideBar}/>
         <Route exact path='/hooks/:id' component={Hook}/>
+
+        <Route exact path='/libraries' component={Libraries}/>
       </div>
     </Router>
   );
