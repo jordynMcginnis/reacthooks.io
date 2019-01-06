@@ -13,7 +13,6 @@ function App() {
         <Route path='/' component={Nav}/>
         <Route path='/hooks' component={SideBar}/>
         <Route exact path='/hooks/:id' component={Hook}/>
-
         <Route exact path='/libraries' component={Libraries}/>
       </div>
     </Router>
