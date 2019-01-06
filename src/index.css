@@ -230,6 +230,7 @@ body {
 }
 .libraries h1 {
   font-size: 4em;
+  text-align: center;
 }
 
 .libraries ul {
@@ -302,6 +303,9 @@ body {
     height: 50px;
     padding-right: 0px;
     justify-content: space-between;
+  }
+  .libraries ul{
+    border-width: 0px;
   }
 
 }
@@ -513,6 +517,10 @@ body {
   .libraries {
     min-width: 440px;
     margin-top: 0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
   .libraries ul {
     border-width: 0px;
