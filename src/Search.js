@@ -63,7 +63,7 @@ function Search() {
       </div>
       <div className='infinite-hits'>
         <SearchBox />
-        <Hits hitComponent={Hook} />
+        <Hits hitComponent={Hook}/>
       </div>
       <Configure
         hitsPerPage={999}
