@@ -175,7 +175,7 @@ body {
 }
 
 .ais-SearchBox-input {
-  border-width: 0px;
+
   font-size: 18px;
   width: 95%;
   height: 42px;
@@ -194,6 +194,7 @@ body {
 .menu-select {
   display: none;
 }
+
 
 #use {
   font-size: 15px;
