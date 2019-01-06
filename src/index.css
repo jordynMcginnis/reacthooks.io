@@ -200,7 +200,6 @@ body {
 .nav {
   height: 0px;
   width: 100%;
-  background-color: red;
 }
 
 .nav ul {
@@ -484,15 +483,45 @@ body {
 
 @media screen and (max-width: 444px) {
   .nav {
-    height: 30px;
+    height: 40px;
     width: 100vw;
     padding-right: 0px;
     justify-content: space-between;
+    min-width: 440px;
+    background-color: grey;
+    color: white;
+    margin-bottom: 5px;
+    align-items: center;
+    margin-top: 0px;
+    padding-top: 0px;
   }
+
   .nav ul {
     margin-top: 0px;
     align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    border-width: 0px;
+    padding-bottom: 100px;
   }
+
+  .nav ul a {
+    color: white;
+    padding-top: 0px;
+  }
+
+  .libraries {
+    min-width: 440px;
+    margin-top: 0px;
+  }
+  .libraries ul {
+    border-width: 0px;
+  }
+  .libraries h1 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
   #implement {
     font-size: 13px;
   }
