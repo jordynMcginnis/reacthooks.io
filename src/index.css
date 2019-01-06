@@ -22,6 +22,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  padding-top: 0px;
   max-width: 476px;
 }
 
@@ -195,6 +196,29 @@ body {
   display: none;
 }
 
+.nav {
+  height: 0px;
+  width: 100%;
+  background-color: red;
+
+}
+
+.nav ul {
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding-right: 40px;
+}
+.nav a {
+  text-decoration: none;
+}
+
+.nav ul li {
+  box-sizing: border-box;
+  padding: 10px;
+  list-style: none;
+  margin: 0px;
+}
 
 #use {
   font-size: 15px;
@@ -208,6 +232,14 @@ body {
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+@media screen and (max-width: 1130px) {
+    .nav {
+    height: 50px;
+    padding-right: 0px;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -348,6 +380,11 @@ body {
 }
 
 @media screen and (max-width: 423px) and (min-width: 400px) {
+  .nav {
+    height: 50px;
+    padding-right: 0px;
+    justify-content: space-between;
+  }
  #implement {
     font-size: 13px;
   }
@@ -374,6 +411,16 @@ body {
 }
 
 @media screen and (max-width: 444px) {
+  .nav {
+    height: 30px;
+    width: 100vw;
+    padding-right: 0px;
+    justify-content: space-between;
+  }
+  .nav ul {
+    margin-top: 0px;
+    align-self: flex-start;
+  }
   #implement {
     font-size: 13px;
   }
