@@ -5,7 +5,7 @@ export function Nav () {
   return (
     <div className='nav'>
       <ul>
-        <Link to="/home"><li>Copy and Paste</li></Link>
+        <Link to="/hooks"><li>Copy and Paste</li></Link>
         <Link to="/libraries"><li>Libraries</li></Link>
       </ul>
     </div>
