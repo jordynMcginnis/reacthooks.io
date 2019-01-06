@@ -47,7 +47,7 @@ function Hook({ hit }) {
   const { name } = hit;
   return (
     <div>
-      <Link to={name} className='hit'>{name}</Link>
+      <Link to={`/hooks/${name}`} className='hit'>{name}</Link>
     </div>
   )
 }
