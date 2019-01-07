@@ -56,7 +56,6 @@ body {
 .ais-MenuSelect {
   padding: 0.3rem 2rem 0.3rem 0.3rem;
   background-color: #fff;
-  background-image: url('http://www.w3.org/2000/svg%27 viewBox=%2…67-9.339 2.829 2.83-11.996 12.17z%27 fill%3D%22%233A4570%22 /%3E%3C/svg%3E');
   background-repeat: no-repeat;
   background-size: 10px 10px;
   background-position: 92% 50%;
@@ -493,7 +492,7 @@ body {
 }
 
 @media screen and (max-width: 444px) {
-  .nav {
+/*  .nav {
     height: 40px;
     width: 100vw;
     padding-right: 0px;
@@ -519,7 +518,7 @@ body {
   .nav ul a {
     color: white;
     padding-top: 0px;
-  }
+  }*/
 
   .libraries {
     min-width: 440px;
