@@ -6,7 +6,6 @@ export function SideBar () {
   return (
     <div className='sideBar'>
       <h2 className='title'><span className='r-title'>react</span>Hooks.io</h2>
-
       <div className='algolia-container'>
         <InstantSearch
           appId="HL2G9DSLG4"
