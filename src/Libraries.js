@@ -8,7 +8,6 @@ export function Libraries () {
         <a href='https://reactjs.org/docs/hooks-intro.html'>
           <li>
             <span className='l-title'>Built-In</span>
-            <span></span>
           </li>
         </a>
         <a href='https://github.com/diegohaz/constate'>
