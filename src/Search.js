@@ -19,7 +19,7 @@ function MenuSelect (props) {
         const hook = e.target.value
 
         if (hook !== null) {
-          history.push(`/${hook}`)
+          history.push(`/hooks/${hook}`)
         }
 
         setValue(hook);
