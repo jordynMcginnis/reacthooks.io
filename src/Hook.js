@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getHook } from './hooks/index.js';
 import AceEditor from "react-ace";
-import {CopyToClipboard} from 'react-copy-to-clipboard';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 import 'brace/mode/javascript';
 import 'brace/theme/monokai';
 
@@ -24,7 +24,9 @@ export function Hook (props) {
 
   return (
     <div className='hook'>
-      <h1 className='name'><a href={url}>{name}</a></h1>
+      <h1 className='name'>
+        <a href={url}>{name}</a>
+      </h1>
       <h5 className='description'>{description}</h5>
       <div className='editors'>
         <div className='implementation'>
