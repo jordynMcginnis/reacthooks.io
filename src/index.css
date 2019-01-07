@@ -266,11 +266,11 @@ body {
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
-.libraries ul a:hover{
+.libraries ul a:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-.libraries ul li span{
+.libraries ul li span {
   padding-top: 5%;
   text-align: center;
   /*color:#7f7f7f;*/
@@ -470,9 +470,11 @@ body {
   .hook {
     padding-left: 1%;
   }
+
   .libraries ul {
     border-width: 0px;
   }
+
   .libraries ul li {
 
     height: 150px;
@@ -528,9 +530,11 @@ body {
     flex-direction: column;
     justify-content: space-around;
   }
+
   .libraries ul {
     border-width: 0px;
   }
+
   .libraries h1 {
     margin-top: 2px;
     margin-bottom: 2px;
