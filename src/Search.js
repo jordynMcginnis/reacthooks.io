@@ -11,6 +11,7 @@ import { withRouter } from 'react-router-dom';
 function MenuSelect (props) {
   const { history, items } = props;
   const [value, setValue] = useState('');
+
   return (
     <select
       className='ais-MenuSelect'
@@ -25,7 +26,9 @@ function MenuSelect (props) {
         setValue(hook);
       }}
     >
-      <option value="" className='ais-MenuSelect-select'>See all options</option>
+      <option value="" className='ais-MenuSelect-select'>
+        See all options
+      </option>
 
       {items.map(item => (
           <option
@@ -36,15 +39,15 @@ function MenuSelect (props) {
             {item.label}
           </option>
       ))}
-
     </select>
   )
 }
 
 const CustomMenuSelect = connectMenu(withRouter(MenuSelect));
 
-function Hook({ hit }) {
+function HookLink({ hit }) {
   const { name } = hit;
+
   return (
     <div>
       <Link to={`/hooks/${name}`} className='hit'>{name}</Link>
@@ -63,7 +66,7 @@ function Search() {
       </div>
       <div className='infinite-hits'>
         <SearchBox />
-        <Hits hitComponent={Hook}/>
+        <Hits hitComponent={HookLink}/>
       </div>
       <Configure
         hitsPerPage={999}

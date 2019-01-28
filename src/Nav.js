@@ -1,13 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-export function Nav () {
+export default function Nav () {
   return (
-    <div className='nav'>
+    <nav className='nav'>
       <ul>
-        <Link to="/hooks/useArray"><li>Copy & Paste</li></Link>
-        <Link to="/libraries"><li>Libraries</li></Link>
+        <NavLink activeClassName='active-link' to="/hooks/useArray"><li>Hooks</li></NavLink>
+        <NavLink exact activeClassName='active-link' to='/tutorials'><li>Tutorials</li></NavLink>
+        <NavLink activeClassName='active-link' to="/libraries"><li>Libraries</li></NavLink>
       </ul>
-    </div>
+    </nav>
   )
 }

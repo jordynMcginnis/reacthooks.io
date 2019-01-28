@@ -9,51 +9,42 @@ body {
 }
 
 .app {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1348px;
+  max-width: 1200px;
   margin: 0 auto;
-  background-color: white;
+  background-color: #fff;
+  padding: 20px;
 }
 
-.sideBar {
-  width: 26%;
+.hooks-container {
+  display: flex;
+}
+
+.sidebar {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
   padding-top: 0px;
-  max-width: 476px;
+  width: 25vw;
+  max-width: 370px;
+}
+
+.infinite-hits {
+  width: 300px;
 }
 
 .ais-SearchBox-reset {
   left: 85%
 }
 
-.title {
-  width: 75%;
-}
-
-.r-title {
-  color: #fc0540;
-}
-
 .name a {
   color: #fc0540;
-}
-
-.algolia-container {
-  width: 25vw;
-  max-width: 370px;
 }
 
 .ais-MenuSelect {
   font-size: 1rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-.ais-MenuSelect {
   padding: 0.3rem 2rem 0.3rem 0.3rem;
   background-color: #fff;
   background-repeat: no-repeat;
@@ -72,8 +63,6 @@ body {
 }
 
 .hook {
-  padding-left: 8px;
-  padding-top: 9vh;
   width: 66%;
   min-width: 440px;
   max-width: 900px;
@@ -151,9 +140,11 @@ body {
   color: black;
   text-decoration-line: none;
 }
+
 .ais-Hits{
   margin-top: 15px;
 }
+
 .ais-Hits, .ais-InfiniteHits {
   list-style: none;
 }
@@ -197,15 +188,13 @@ body {
 }
 
 .nav {
-  height: 0px;
   width: 100%;
 }
 
 .nav ul {
   display: flex;
   justify-content: flex-end;
-  box-sizing: border-box;
-  padding-right: 40px;
+  padding: 0;
 }
 
 .nav a {
@@ -214,76 +203,25 @@ body {
 }
 
 .nav ul li {
-  box-sizing: border-box;
   padding: 10px;
   list-style: none;
   margin: 0px;
 }
 
-.libraries {
-  width: 100%;
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.libraries h1 {
-  font-size: 4em;
-  text-align: center;
+.libraries li {
+  list-style-type: none;
 }
 
-.libraries ul {
-  padding: 0px;
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.l-title{
-  color: black;
+.libraries a, .tutorials a {
+  color: #fc0540;
 }
 
-.libraries ul a {
-  margin: 1%;
-  width: 30%;
-  height: 29vh;
-  list-style: none;
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 5px;
-  border-color: #7f7f7f;
-  color: #7f7f7f;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  max-height: 189px;
-  max-width: 292px;
-  padding: 5px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  text-decoration: none;
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+.tutorials li {
+  list-style-type: none;
 }
 
-.libraries ul a:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
-.libraries ul li span {
-  padding-top: 5%;
-  text-align: center;
-  /*color:#7f7f7f;*/
-}
-
-.libraries ul li {
-  text-decoration: none;
-  color: #7f7f7f;
-  list-style: none;
-   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.active-link {
+  font-weight: bold;
 }
 
 #use {
@@ -304,39 +242,26 @@ body {
   padding-bottom: 15px;
 }
 
-@media screen and (max-width: 1130px) {
-  .nav {
-    height: 50px;
-    padding-right: 0px;
-    justify-content: space-between;
-  }
-  .libraries ul{
-    border-width: 0px;
-  }
-
+.footer {
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px;
 }
 
-@media screen and (max-width: 1024px) {
- #implement {
+@media screen and (max-width: 1130px) {
+  #implement {
     font-size: 15px;
   }
 
   #use {
     font-size: 15px;
   }
-}
 
-@media screen and (max-width: 1130px) {
   body {
     width: 100vw;
   }
 
-  .app {
-    width: 100%;
-    min-width: 100vw;
-  }
-
-  .sideBar {
+  .sidebar {
     width: 100vw;
     padding-bottom: 10px;
     min-width: 440px;
@@ -344,7 +269,15 @@ body {
     padding-right: 10%;
     box-sizing: border-box;
     margin: 0 auto;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    max-width: 150px;
+  }
 
+  .hooks-container {
+    flex-direction: column;
   }
 
   .infinite-hits {
@@ -356,6 +289,7 @@ body {
     font-size: 1rem;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    margin: 10px 0 25px;
   }
 
   .title {
@@ -363,14 +297,6 @@ body {
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
-  }
-
-  ul {
-    border-left-color: #e8e8e8;
-    border-left-width: 1px;
-    border-left-style: solid;
-    width: 100%;
-    border-right-width: 0px;
   }
 
   .ais-Hits-item {
@@ -400,8 +326,6 @@ body {
 
   .name {
     margin-top: 0px;
-    display: flex;
-    justify-content: center;
     margin-bottom: 10px;
     font-size: 1.2em;
   }
@@ -436,15 +360,7 @@ body {
     background-color: red;
   }
 
-  .algolia-container {
-    align-self: center;
-    display: flex;
-    justify-content: center;
-    margin: 0px;
-    max-width: 150px;
-  }
-
- #implement {
+  #implement {
     font-size: 15px;
   }
 
@@ -454,12 +370,8 @@ body {
 }
 
 @media screen and (max-width: 423px) and (min-width: 400px) {
-  .nav {
-    height: 50px;
-    padding-right: 0px;
-    justify-content: space-between;
-  }
- #implement {
+
+  #implement {
     font-size: 13px;
   }
 
@@ -470,15 +382,6 @@ body {
   .hook {
     padding-left: 1%;
   }
-
-  .libraries ul {
-    border-width: 0px;
-  }
-
-  .libraries ul li {
-
-    height: 150px;
-  }
 }
 
 @media screen and (width: 411px) {
@@ -487,58 +390,7 @@ body {
   }
 }
 
-@media screen and (width: 414px) {
-  .hook {
-    padding-left: 10%;
-  }
-}
-
 @media screen and (max-width: 444px) {
-/*  .nav {
-    height: 40px;
-    width: 100vw;
-    padding-right: 0px;
-    justify-content: space-between;
-    min-width: 440px;
-    background-color: #4a4a4a;
-    color: white;
-    margin-bottom: 5px;
-    align-items: center;
-    margin-top: 0px;
-    padding-top: 0px;
-  }
-
-  .nav ul {
-    margin-top: 0px;
-    align-self: flex-start;
-    display: flex;
-    justify-content: center;
-    border-width: 0px;
-    padding-bottom: 100px;
-  }
-
-  .nav ul a {
-    color: white;
-    padding-top: 0px;
-  }*/
-
-  .libraries {
-    min-width: 440px;
-    margin-top: 0px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-
-  .libraries ul {
-    border-width: 0px;
-  }
-
-  .libraries h1 {
-    margin-top: 2px;
-    margin-bottom: 2px;
-  }
 
   #implement {
     font-size: 13px;

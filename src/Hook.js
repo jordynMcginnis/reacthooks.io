@@ -5,7 +5,7 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 import 'brace/mode/javascript';
 import 'brace/theme/monokai';
 
-export function Hook (props) {
+export default function Hook (props) {
   const id = props.match.params.id;
   const [name, setName] = useState(null);
   const [implementation, setImplementation] = useState(undefined);
@@ -33,7 +33,7 @@ export function Hook (props) {
           <div className='options'>
             <h3 className='i-title'>IMPLEMENTATION:</h3>
             <CopyToClipboard text={implementation}>
-              <button className='copy' onClick={() => {alert('copied to clip board')}}>Copy</button>
+              <button className='copy' onClick={() => {alert('Copied to clipboard')}}>Copy</button>
             </CopyToClipboard>
           </div>
           <AceEditor
