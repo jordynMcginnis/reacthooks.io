@@ -18,14 +18,12 @@ function App(props) {
   return (
     <div className='app'>
       <Nav />
-      <React.Fragment>
-        <Route path='/tutorials' exact component={Tutorials}/>
-        <div className='hooks-container'>
-          <Route path='/hooks' component={Sidebar}/>
-          <Route exact path='/hooks/:id' component={Hook}/>
-        </div>
-        <Route exact path='/libraries' component={Libraries}/>
-      </React.Fragment>
+      <Route path='/tutorials' exact component={Tutorials}/>
+      <div className='hooks-container'>
+        <Route path='/hooks' component={Sidebar}/>
+        <Route exact path='/hooks/:id' component={Hook}/>
+      </div>
+      <Route exact path='/libraries' component={Libraries}/>
       <Footer />
     </div>
   );
