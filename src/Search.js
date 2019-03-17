@@ -4,7 +4,8 @@ import {
   SearchBox,
   connectMenu,
   Hits,
-  Configure
+  Configure,
+  PoweredBy
 } from 'react-instantsearch-dom';
 import { withRouter } from 'react-router-dom';
 
@@ -66,6 +67,7 @@ function Search() {
       </div>
       <div className='infinite-hits'>
         <SearchBox />
+        <PoweredBy/>
         <Hits hitComponent={HookLink}/>
       </div>
       <Configure
